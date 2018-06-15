@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Question page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <a class="link-back" href="/url/of/previous/page">Back</a>
+
+      <form class="form" action="juggling-trick" method="post">
+
+        <div class="form-group">
+  <fieldset>
+
+    <legend>
+      <h1 class="heading-large">What objects do you juggle with?</h1>
+    </legend>
+
+    <div class="multiple-choice">
+      <input id="radio-1" type="radio" name="juggling-items"
+      value="balls"{{ checked("juggling-items","balls")}}>
+      <label for="radio-1">balls</label>
+    </div>
+    <div class="multiple-choice">
+      <input id="radio-2" type="radio" name="juggling-items"
+      value="skittles"{{ checked("juggling-items","skittles")}}>
+      <label for="radio-2">skittles</label>
+    </div>
+    <p class="form-block">or</p>
+    <div class="multiple-choice">
+      <input id="radio-3" type="radio" name="juggling-items"
+      value="other"{{ checked("juggling-items","other")}}>
+      <label for="radio-3">other</label>
+    </div>
+
+  </fieldset>
+</div>
+
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
