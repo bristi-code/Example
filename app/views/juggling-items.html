@@ -15,30 +15,29 @@
       <form class="form" action="juggling-trick" method="post">
 
         <div class="form-group">
-  <fieldset>
+          <div class="form-group">
+          <fieldset>
 
-    <legend>
-      <h1 class="heading-large">What objects do you juggle with?</h1>
-    </legend>
+            <legend>
+              <h3 class="heading-medium">Which items can you juggle with?</h3>
+              <span class="body-text">Select all that apply</span>
+            </legend>
 
-    <div class="multiple-choice">
-      <input id="radio-1" type="radio" name="juggling-items"
-      value="balls"{{ checked("juggling-items","balls")}}>
-      <label for="radio-1">balls</label>
-    </div>
-    <div class="multiple-choice">
-      <input id="radio-2" type="radio" name="juggling-items"
-      value="skittles"{{ checked("juggling-items","skittles")}}>
-      <label for="radio-2">skittles</label>
-    </div>
-    <p class="form-block">or</p>
-    <div class="multiple-choice">
-      <input id="radio-3" type="radio" name="juggling-items"
-      value="other"{{ checked("juggling-items","other")}}>
-      <label for="radio-3">other</label>
-    </div>
+            <div class="multiple-choice">
+              <input id="Balls" name="juggling-items" type="checkbox" value="Balls">
+              <label for="Balls">Balls</label>
+            </div>
+            <div class="multiple-choice">
+              <input id="Skittles" name="juggling-items" type="checkbox" value="Skittles">
+              <label for="Skittles">Skittles</label>
+            </div>
+            <div class="multiple-choice">
+              <input id="Other" name="juggling-items" type="checkbox" value="Other">
+              <label for="Other">Other</label>
+            </div>
 
-  </fieldset>
+          </fieldset>
+        </div>
 </div>
 
         <div class="form-group">
